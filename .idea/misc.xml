@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/tamas/AndroidStudioProjects/SecondMiniProject (1)/SecondMiniProject (3)/SecondMiniProject/app/src/main/res/layout/activity_catorcepregunta.xml" value="0.25" />
+        <entry key="..\:/Users/tamas/AndroidStudioProjects/SecondMiniProject (1)/SecondMiniProject (3)/SecondMiniProject/app/src/main/res/layout/activity_docepregunta.xml" value="0.25" />
+        <entry key="..\:/Users/tamas/AndroidStudioProjects/SecondMiniProject (1)/SecondMiniProject (3)/SecondMiniProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/tamas/AndroidStudioProjects/SecondMiniProject (1)/SecondMiniProject (3)/SecondMiniProject/app/src/main/res/layout/activity_octavapregunta.xml" value="0.25" />
+        <entry key="..\:/Users/tamas/AndroidStudioProjects/SecondMiniProject (1)/SecondMiniProject (3)/SecondMiniProject/app/src/main/res/layout/activity_primerapregunta.xml" value="0.25" />
+        <entry key="..\:/Users/tamas/AndroidStudioProjects/SecondMiniProject (1)/SecondMiniProject (3)/SecondMiniProject/app/src/main/res/layout/activity_puntaje.xml" value="0.25" />
+        <entry key="..\:/Users/tamas/AndroidStudioProjects/SecondMiniProject (1)/SecondMiniProject (3)/SecondMiniProject/app/src/main/res/layout/activity_quincepregunta.xml" value="0.25" />
+        <entry key="..\:/Users/tamas/AndroidStudioProjects/SecondMiniProject (1)/SecondMiniProject (3)/SecondMiniProject/app/src/main/res/layout/activity_trecepregunta.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

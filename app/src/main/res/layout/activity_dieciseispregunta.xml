@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dieciseispregunta"
+    android:id="@+id/diecisespreguntalayout">
+
+    <ImageView
+        android:id="@+id/fondopersonaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/flash" />
+
+    <RelativeLayout
+        android:id="@+id/degradado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/personaje_degradado">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contenedorpregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/logopersonaje"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/logoflash" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logopersonaje"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pregunta_8"
+            android:textColor="@color/white"
+            android:fontFamily="@font/tangosans"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/pregunta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titulo"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/tangosans"
+            android:layout_marginTop="15dp"
+            android:text="@string/deciseispregunta"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/botonenviar"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/botonenviar_azul"
+        android:onClick="GoToInicio"
+        android:text="@string/siguiente"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        tools:ignore="OnClick" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contenedorpregunta"
+        android:id="@+id/contenedorrespuesta"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/respuesta"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/fondoedit"
+            android:backgroundTint="#F3FFFFFF"
+            android:ems="10"
+            android:hint="@string/respuesta"
+            android:inputType="textPersonName"
+            android:padding="18dp"
+            android:textColorHint="#7A000000"
+            android:textSize="15sp"
+            android:maxLength="5" />
+
+        <RelativeLayout
+            android:id="@+id/paraponerstart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/botonstart"
+                android:layout_width="51dp"
+                android:layout_height="57dp"
+                android:layout_toEndOf="@id/paracentrar"
+                android:background="@drawable/shapeintroducirazul"
+                android:elevation="10dp"
+                android:onClick="EnviarRespuesta"
+                tools:ignore="OnClick" />
+
+            <RelativeLayout
+                android:id="@+id/paracentrar"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="50dp">
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/enviar"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18sp"
+                android:layout_toEndOf="@id/paracentrar"
+                android:elevation="11dp"
+                app:srcCompat="@drawable/enviar" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/pista"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/contenedorrespuesta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:onClick="pista"
+        app:srcCompat="@drawable/idea"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/dcblanco"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/recuadrotimer"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fondoeditrojoazul"
+        android:onClick="EnviarRespuesta"
+        tools:ignore="OnClick">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/timertext"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tangosans"/>
+
+</RelativeLayout>

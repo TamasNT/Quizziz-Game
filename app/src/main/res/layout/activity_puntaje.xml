@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F5F5"
+    android:id="@+id/contenedorpuntaje"
+    tools:context=".Puntaje">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/avengersnew" />
+
+    <ImageView
+        android:id="@+id/logopequeno"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/avengers" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/centrargrande">
+
+        <ImageView
+            android:id="@+id/logogrande"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            app:srcCompat="@drawable/logoavenger"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/centrarlogo"
+            android:layout_below="@id/logogrande">
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textofelicitacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logopequeno"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/tangosans"
+        android:text="@string/felicitacion"
+        android:textColor="#232325"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/felicidades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textofelicitacion"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/tangosans"
+        android:text="@string/nombrepersona"
+        android:textColor="#A8232325" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centrargrande"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/contenedoralineacion"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/puntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tangosans"
+            android:text="@string/puntuaci_n"
+            android:textColor="#232325" />
+
+        <TextView
+            android:id="@+id/correctas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@id/puntuacion"
+            android:text="@string/correctas"
+            android:textColor="#232325"
+            android:fontFamily="@font/tangosans"/>
+
+        <TextView
+            android:id="@+id/incorrectas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/incorrectas"
+            android:layout_toEndOf="@id/correctas"
+            android:textColor="#232325"
+            android:fontFamily="@font/tangosans"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contenedoralineacion"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/contenedorpuntos"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/puntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tangosans"
+            android:text="@string/_0_8"
+            android:textColor="#A8232325"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/numcorrectas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_toEndOf="@id/puntos"
+            android:fontFamily="@font/tangosans"
+            android:paddingHorizontal="5dp"
+            android:text="@string/_0"
+            android:textColor="#A8232325"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/numincorrectas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/numcorrectas"
+            android:fontFamily="@font/tangosans"
+            android:paddingHorizontal="10dp"
+            android:text="@string/_0"
+            android:textColor="#A8232325"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/botonabajo"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shapeabajo"
+        android:elevation="10dp"
+        android:onClick="CompartirDatos"
+        tools:ignore="OnClick"
+        android:text="@string/compartir"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

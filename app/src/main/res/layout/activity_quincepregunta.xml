@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quincepregunta"
+    android:id="@+id/quincepreguntalayout">
+
+    <ImageView
+        android:id="@+id/fondopersonaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/greenarrow" />
+
+    <RelativeLayout
+        android:id="@+id/degradado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/personaje_degradado">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contenedorpregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/logopersonaje"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/logoarrow" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logopersonaje"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pregunta_7"
+            android:textColor="@color/white"
+            android:fontFamily="@font/tangosans"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/pregunta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titulo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/quincepregunta"
+            android:fontFamily="@font/tangosans"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/botonenviar"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/botonenviar_azul"
+        android:onClick="GoToDieciseisPregunta"
+        android:text="@string/siguiente"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        tools:ignore="OnClick" />
+
+    <RelativeLayout
+        android:id="@+id/recuadroopcion1"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/contenedorpregunta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/fondoedit">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recuadroopcion2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/recuadroopcion1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fondoedit">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recuadroopcion3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/fondoedit"
+        android:layout_below="@id/recuadroopcion2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/respuestas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contenedorpregunta"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_toStartOf="@id/contresp">
+
+        <CheckBox
+            android:id="@+id/opcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:buttonTint="#0173E4"
+
+            />
+
+        <CheckBox
+            android:id="@+id/opcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/opcion1"
+            android:layout_marginTop="34dp"
+            android:buttonTint="#0173E4" />
+
+        <CheckBox
+            android:id="@+id/opcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:buttonTint="#0173E4"
+            android:layout_below="@id/opcion2"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/contresp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contenedorpregunta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/resp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/correctaarrow"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/resp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resp1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="@string/incorrectaarrow"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/resp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resp2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:text="@string/correctaarrow2"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/dcblanco" />
+
+    <RelativeLayout
+        android:id="@+id/recuadrotimer"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fondoeditrojoazul">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/timertext"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tangosans"/>
+
+</RelativeLayout>
